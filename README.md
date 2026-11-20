@@ -16,12 +16,12 @@ The bouquet rotates indefinitely while the page is visible. Drag to explore, or 
 
 ## Personalise
 
-Edit `config.js` to change the message and rotation duration. Flower arrangement and palette live in `flowers.js`; page styling is in `style.css`.
+Edit `config.js` to change the subtitle and rotation duration. Flower arrangement and palette live in `flowers.js`; page styling is in `style.css`.
 
 ## Publish with GitHub Pages
 
 1. Create a public GitHub repository named `little-bouquet`.
-2. Upload all the contents of this folder to its root, including the entire `vendor` folder. `index.html` must be at the repository root.
+2. Upload all the contents of this folder to its root, including `three.module.js`. `index.html` must be at the repository root.
 3. In the repository choose Settings → Pages.
 4. Under Build and deployment, choose Deploy from a branch, select `main` and `/ (root)`, then Save.
 5. Once deployment finishes, GitHub displays your link: `https://YOUR-USERNAME.github.io/little-bouquet/`.
@@ -34,4 +34,4 @@ All resource paths are relative, so repository subpaths work. Your published mes
 
 Curved petal surfaces are sampled using fine, solid cubes and batched into a single instanced mesh. Six overlapping whorls create each peony; lilies have six individually curved petals, pink throat details and six stamens. Each flower is oriented independently in 3D, with stems converging at a ribbon tie. Lighting illuminates both front and back. A capped render resolution keeps GPU work bounded on phones.
 
-Three.js r170 is vendored under its MIT licence in `vendor/THREE-LICENSE.txt`.
+Three.js r170 is vendored under its MIT licence in `THREE-LICENSE.txt`.

@@ -1,10 +1,10 @@
-import * as THREE from './vendor/three.module.js';
+import * as THREE from './three.module.js';
 import {createBouquet} from './flowers.js';
 import {gift} from './config.js';
 
 const canvas=document.querySelector('#bouquet');
 const status=document.querySelector('#status');
-document.querySelector('#message').textContent=gift.message;
+document.querySelector('.edition').textContent=gift.subtitle;
 try {
   const renderer=new THREE.WebGLRenderer({canvas,alpha:true,antialias:true,powerPreference:'high-performance'});
   renderer.setPixelRatio(Math.min(window.devicePixelRatio,1.7));

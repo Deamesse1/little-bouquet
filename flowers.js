@@ -1,4 +1,4 @@
-import * as THREE from './vendor/three.module.js';
+import * as THREE from './three.module.js';
 
 // Small, solid voxels sample curved petal surfaces. Each bloom has its own
 // coordinate frame; geometry remains volumetric from every viewing angle.
